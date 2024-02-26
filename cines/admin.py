@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Pelicula, Actor, Genre
+from .models import Pelicula, Actor, Genre, Reserva
 
 #Se crean clases para que se vean bien en el admin
 class PeliculaAdmin(admin.ModelAdmin):
@@ -11,7 +11,5 @@ class ActorAdmin(admin.ModelAdmin):
 class GenreAdmin(admin.ModelAdmin):
     list_display = ['genre_name', 'pelicula']
 
-
-admin.site.register(Pelicula, PeliculaAdmin)
-admin.site.register(Actor, ActorAdmin)
-admin.site.register(Genre, GenreAdmin)
+class ReservaAdmin(admin.ModelAdmin):
+    list_display = ['r_name', 'r_apellido', 'r_codigo', 'r_cantidad', 'r_pelicula', 'r_horario']

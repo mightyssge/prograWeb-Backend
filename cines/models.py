@@ -16,7 +16,7 @@ class Pelicula(models.Model):
     path = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.username
+        return self.title
 
 class Actor(models.Model):
     name = models.CharField(max_length=100)
@@ -31,3 +31,26 @@ class Genre(models.Model):
 
     def __str__(self):
         return self.genre_name
+
+
+class Reserva(models.Model):
+    r_name = models.CharField(max_length=100)
+    r_apellido = models.CharField(max_length=100)
+    r_codigo = models.CharField(max_length=100)
+    r_cantidad = models.IntegerField()  
+    r_pelicula = models.CharField(max_length=100)
+    r_horario = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.r_name
+    
+class Sala(models.Model):
+    siglas = models.CharField(max_length=10)
+    nombre = models.CharField(max_length=100)
+    direccion = models.TextField()
+    imagen = models.TextField()
+    path = models.TextField()
+
+    def __str__(self):
+        return self.nombre
+    
