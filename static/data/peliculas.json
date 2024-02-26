@@ -1,0 +1,381 @@
+[
+    {
+        "id": 1,
+        "title": "The Grudge",
+        "year": 2020,
+        "cast": [
+            "Andrea Riseborough",
+            "Demi\u00e1n Bichir",
+            "John Cho",
+            "Betty Gilpin",
+            "Lin Shaye",
+            "Jacki Weaver"
+        ],
+        "genres": [
+            "Horror",
+            "Supernatural"
+        ],
+        "href": "The_Grudge_(2020_film)",
+        "extract": "The Grudge is a 2020 American psychological supernatural horror film written and directed by Nicolas Pesce. Originally announced as a reboot of the 2004 American remake and the original 2002 Japanese horror film Ju-On: The Grudge, the film ended up taking place before and during the events of the 2004 film and its two direct sequels, and is the fourth installment in the American The Grudge film series. The film stars Andrea Riseborough, Demi\u00e1n Bichir, John Cho, Betty Gilpin, Lin Shaye, and Jacki Weaver, and follows a police officer who investigates several murders that are seemingly connected to a single house.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/3\/34\/The_Grudge_2020_Poster.jpeg",
+        "thumbnail_width": 220.0,
+        "thumbnail_height": 326.0,
+        "path": "the-grudge",
+        "salas": [
+            {
+                "sala": "CP Alcazar",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Arequipa",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"TG"
+    },
+    {
+        "id": 2,
+        "title": "Underwater",
+        "year": 2020,
+        "cast": [
+            "Kristen Stewart",
+            "Vincent Cassel",
+            "Jessica Henwick",
+            "John Gallagher Jr.",
+            "Mamoudou Athie",
+            "T.J. Miller"
+        ],
+        "genres": [
+            "Action",
+            "Horror",
+            "Science Fiction"
+        ],
+        "href": "Underwater_(film)",
+        "extract": "Underwater is a 2020 American science fiction action horror film directed by William Eubank. The film stars Kristen Stewart, Vincent Cassel, Jessica Henwick, John Gallagher Jr., Mamoudou Athie, and T.J. Miller.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4a\/Underwater_poster.jpeg",
+        "thumbnail_width": 250.0,
+        "thumbnail_height": 398.0,
+        "path": "underwater",
+        "salas": [
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"UW"
+    },
+    {
+        "id": 3,
+        "title": "Like a Boss",
+        "year": 2020,
+        "cast": [
+            "Tiffany Haddish",
+            "Rose Byrne",
+            "Salma Hayek",
+            "Jennifer Coolidge",
+            "Billy Porter"
+        ],
+        "genres": [
+            "Comedy"
+        ],
+        "href": "Like_a_Boss_(film)",
+        "extract": "Like a Boss is a 2020 American comedy film directed by Miguel Arteta, written by Sam Pitman and Adam Cole-Kelly, and starring Tiffany Haddish, Rose Byrne, and Salma Hayek. The plot follows two friends who attempt to take back control of their cosmetics company from an industry titan.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/9\/9a\/LikeaBossPoster.jpg",
+        "thumbnail_width": 259.0,
+        "thumbnail_height": 383.0,
+        "path": "like-a-boss",
+        "salas": [
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"LB"
+    },
+    {
+        "id": 4,
+        "title": "Three Christs",
+        "year": 2020,
+        "cast": [
+            "Richard Gere",
+            "Peter Dinklage",
+            "Walton Goggins",
+            "Bradley Whitford"
+        ],
+        "genres": [
+            "Drama"
+        ],
+        "href": "Three_Christs",
+        "extract": "Three Christs, also known as State of Mind, is a 2017 American drama film directed, co-produced, and co-written by Jon Avnet and based on Milton Rokeach's nonfiction book The Three Christs of Ypsilanti. It screened in the Gala Presentations section at the 2017 Toronto International Film Festival. The film is also known as: Three Christs of Ypsilanti, The Three Christs of Ypsilanti, Three Christs of Santa Monica, and The Three Christs of Santa Monica.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/a\/a1\/Three_Christs_poster.jpg",
+        "thumbnail_width": 259.0,
+        "thumbnail_height": 383.0,
+        "path": "three-christs",
+        "salas": [
+            {
+                "sala": "CP Arequipa Real Plaza",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"TC"
+    },
+    {
+        "id": 5,
+        "title": "Inherit the Viper",
+        "year": 2020,
+        "cast": [
+            "Josh Hartnett",
+            "Margarita Levieva",
+            "Chandler Riggs",
+            "Bruce Dern",
+            "Owen Teague"
+        ],
+        "genres": [
+            "Crime",
+            "Drama"
+        ],
+        "href": "Inherit_the_Viper",
+        "extract": "Inherit the Viper is a 2019 American crime drama film directed by Anthony Jerjen, in his feature directorial debut, from a screenplay by Andrew Crabtree. It stars Josh Hartnett, Margarita Levieva, Chandler Riggs, Bruce Dern, Valorie Curry, Owen Teague, and Dash Mihok.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/1c\/Inherit_the_Viper_%282019%29_Film_Poster.jpg",
+        "thumbnail_width": 236.0,
+        "thumbnail_height": 350.0,
+        "path": "inherit-the-viper",
+        "salas": [
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"IV"
+    },
+    {
+        "id": 6,
+        "title": "The Sonata",
+        "year": 2020,
+        "cast": [
+            "Freya Tingley",
+            "Simon Abkarian",
+            "Rutger Hauer",
+            "James Faulkner"
+        ],
+        "genres": [
+            "Mystery",
+            "Thriller"
+        ],
+        "href": "The_Sonata_(film)",
+        "extract": "The Sonata is a 2018 mystery thriller film, directed by Andrew Desmond, from a screenplay by Desmond and Arthur Morin. It stars Freya Tingley, Simon Abkarian, James Faulkner, Rutger Hauer, Matt Barber and James Kermack. It was released in the United States on January 10, 2020, by Screen Media Films. It grossed $146,595 at the box office and received mixed reviews from critics.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/13\/The_Sonata_%282018%29_Film_Poster.jpg",
+        "thumbnail_width": 246.0,
+        "thumbnail_height": 350.0,
+        "path": "the-sonata",
+        "salas": [
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Centro",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"TS"
+    },
+    {
+        "id": 7,
+        "title": "The Murder of Nicole Brown Simpson",
+        "year": 2020,
+        "cast": [
+            "Mena Suvari",
+            "Nick Stahl",
+            "Taryn Manning"
+        ],
+        "genres": [
+            "Crime",
+            "Horror"
+        ],
+        "href": "The_Murder_of_Nicole_Brown_Simpson",
+        "extract": "The Murder of Nicole Brown Simpson is a 2019 American crime horror film directed by Daniel Farrands. The film is loosely based on the murder of Nicole Brown Simpson, presenting a version of events in which Brown Simpson is murdered by serial killer Glen Edward Rogers, and not by O. J. Simpson, her ex-husband and the primary suspect in the case. Though Mena Suvari's performance as Nicole Brown was praised, the film was panned by critics.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/e\/ed\/The_Murder_of_Nicole_Brown_Simpson_poster.jpg",
+        "thumbnail_width": 263.0,
+        "thumbnail_height": 380.0,
+        "path": "the-murder-of-nicole-brown-simpson",
+        "salas": [
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30, 15:00-17:00"]
+            }
+        ]
+        ,"siglas":"MN"
+    },
+    {
+        "id": 8,
+        "title": "Bad Boys for Life",
+        "year": 2020,
+        "cast": [
+            "Will Smith",
+            "Martin Lawrence",
+            "Vanessa Hudgens",
+            "Alexander Ludwig",
+            "Charles Melton",
+            "Paola N\u00fa\u00f1ez",
+            "Kate del Castillo",
+            "Nicky Jam",
+            "Joe Pantoliano"
+        ],
+        "genres": [
+            "Action",
+            "Comedy"
+        ],
+        "href": "Bad_Boys_for_Life",
+        "extract": "Bad Boys for Life is a 2020 American buddy cop action comedy film directed by Adil & Bilall. It is the sequel to Bad Boys II (2003) and the third installment in the Bad Boys franchise. Will Smith, Martin Lawrence, Joe Pantoliano and Theresa Randle reprise their roles in the film and are joined by Paola N\u00fa\u00f1ez, Vanessa Hudgens, Jacob Scipio, Alexander Ludwig, Charles Melton, Kate del Castillo and Nicky Jam. The film was produced by Smith, Jerry Bruckheimer, and Doug Belgrad, with a screenplay written by Chris Bremner, Peter Craig and Joe Carnahan. In Bad Boys for Life, Miami detectives Mike Lowrey and Marcus Burnett investigate a string of murders tied to Lowrey's troubled past.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/9\/90\/Bad_Boys_for_Life_poster.jpg",
+        "thumbnail_width": 219.0,
+        "thumbnail_height": 325.0,
+        "path": "bad-boys-for-life",
+        "salas": [
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
+        ,"siglas":"BB"
+    },
+    {
+        "id": 9,
+        "title": "Dolittle",
+        "year": 2020,
+        "cast": [
+            "Robert Downey Jr.",
+            "Antonio Banderas",
+            "Michael Sheen",
+            "Emma Thompson",
+            "Rami Malek",
+            "John Cena",
+            "Kumail Nanjiani",
+            "Octavia Spencer",
+            "Tom Holland",
+            "Craig Robinson",
+            "Ralph Fiennes",
+            "Selena Gomez",
+            "Marion Cotillard"
+        ],
+        "genres": [
+            "Adventure",
+            "Fantasy"
+        ],
+        "href": "Dolittle_(film)",
+        "extract": "Dolittle is a 2020 American fantasy adventure film directed by Stephen Gaghan from a screenplay by Gaghan, Dan Gregor, and Doug Mand, based on a story by Thomas Shepherd. Dolittle is based on the title character created by Hugh Lofting and is primarily inspired by the author's second Doctor Dolittle book, The Voyages of Doctor Dolittle (1922). Robert Downey Jr. stars as the title character, alongside Antonio Banderas and Michael Sheen in live-action roles, with Emma Thompson, Rami Malek, John Cena, Kumail Nanjiani, Octavia Spencer, Tom Holland, Craig Robinson, Ralph Fiennes, Selena Gomez, and Marion Cotillard voicing an array of creatures.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/1f\/Dolittle_%282020_film_poster%29.png",
+        "thumbnail_width": 220.0,
+        "thumbnail_height": 326.0,
+        "path": "dolittle",
+        "salas": [
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
+        ,"siglas":"DO"
+    },
+    {
+        "id": 10,
+        "title": "A Fall from Grace",
+        "year": 2020,
+        "cast": [
+            "Crystal R. Fox",
+            "Phylicia Rashad",
+            "Bresha Webb",
+            "Mehcad Brooks",
+            "Cicely Tyson",
+            "Tyler Perry"
+        ],
+        "genres": [
+            "Thriller"
+        ],
+        "href": "A_Fall_from_Grace",
+        "extract": "A Fall from Grace is a 2020 American thriller film produced, written, and directed by Tyler Perry and his first to be released by Netflix. The film follows a woman who finds a dangerous new love and the novice attorney who defends her in a sensational court case. This was the final film of actor Cicely Tyson before her death in January 2021.",
+        "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4e\/AFallFromGrace.png",
+        "thumbnail_width": 259.0,
+        "thumbnail_height": 383.0,
+        "path": "a-fall-from-grace",
+        "salas": [
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"FG"
+    }
+]
