@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
-    'cines.apps.CinesConfig'
+    'cines.apps.CinesConfig',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -84,9 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'peliculasdb',
-        'USER' : 'usuario',
-        'PASSWORD' : 'password',
-        'HOST' : '127.0.0.1',
+        'USER' : 'postgres',
+        'PASSWORD' : 'postgres',
+        'HOST' : 'localhost',
         'PORT' : '5432'
     }
 }

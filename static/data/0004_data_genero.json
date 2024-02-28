@@ -1,0 +1,146 @@
+[
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 1,
+        "fields": {
+            "pelicula_id": 1,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 2,
+        "fields": {
+            "pelicula_id": 1,
+            "genre_name": "Supernatural"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 3,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Action"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 4,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 5,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Science Fiction"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 6,
+        "fields": {
+            "pelicula_id": 3,
+            "genre_name": "Comedy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 7,
+        "fields": {
+            "pelicula_id": 4,
+            "genre_name": "Drama"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 8,
+        "fields": {
+            "pelicula_id": 5,
+            "genre_name": "Crime"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 9,
+        "fields": {
+            "pelicula_id": 5,
+            "genre_name": "Drama"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 10,
+        "fields": {
+            "pelicula_id": 6,
+            "genre_name": "Mystery"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 11,
+        "fields": {
+            "pelicula_id": 6,
+            "genre_name": "Thriller"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 12,
+        "fields": {
+            "pelicula_id": 7,
+            "genre_name": "Crime"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 13,
+        "fields": {
+            "pelicula_id": 7,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 14,
+        "fields": {
+            "pelicula_id": 8,
+            "genre_name": "Action"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 15,
+        "fields": {
+            "pelicula_id": 8,
+            "genre_name": "Comedy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 16,
+        "fields": {
+            "pelicula_id": 9,
+            "genre_name": "Adventure"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 17,
+        "fields": {
+            "pelicula_id": 9,
+            "genre_name": "Fantasy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 18,
+        "fields": {
+            "pelicula_id": 10,
+            "genre_name": "Thriller"
+        }
+    }
+]
