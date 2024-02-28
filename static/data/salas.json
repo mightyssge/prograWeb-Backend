@@ -1,0 +1,352 @@
+[
+    {
+        "ID": 1,
+        "name": "CP Alcazar",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Santa Cruz 814-816",
+        "secondAddress": "Miraflores Lima Lima",
+        "city": "Lima",
+        "description": "CINEPLANET ALCAZAR",
+        "path": "cp-alcazar",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b70aa8b9-f9f9-49c5-8f7e-28e6afd5646f",
+        "peliculas": [
+            {
+                "pelicula": "The Grudge",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ] 
+        ,"siglas":"AL"
+        
+    },
+    {
+        "ID": 37,
+        "name": "CP Arequipa",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Ejercito 793 Cayma",
+        "secondAddress": "Cayma Arequipa Arequipa",
+        "city": "Arequipa",
+        "description": "CINEPLANET AREQUIPA",
+        "path": "cp-arequipa",
+        "formats": [
+            "2D",
+            "3D",
+            "REGULAR"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/f0c0deba-02e8-4e07-9d70-ab29336bc551",
+        "peliculas": [
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            }
+        ]
+        ,"siglas":"AQ"
+    },
+    {
+        "ID": 51,
+        "name": "CP Arequipa Paseo Central",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Arturo Ibañez S/N,",
+        "secondAddress": "Arequipa Arequipa",
+        "city": "Arequipa",
+        "description": "CINEPLANET AREQUIPA PASEO CENTRAL",
+        "path": "cp-arequipa-paseo-central",
+        "formats": [
+            "2D",
+            "REGULAR"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b06aa9ea-73e2-4f7b-9608-f99536d6cf3b",
+        "peliculas": [
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"PC"
+    },
+    {
+        "ID": 38,
+        "name": "CP Arequipa Real Plaza",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Ejercito 1009 Cayma",
+        "secondAddress": "Cayma Arequipa Arequipa",
+        "city": "Arequipa",
+        "description": "CINEPLANET AREQUIPA REAL PLAZA",
+        "path": "cp-arequipa-real-plaza",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/d777a757-28b0-4ba2-870b-f807c3e72950",
+        "peliculas": [
+            {
+                "pelicula": "Three Christs",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"AR"
+    },
+    {
+        "ID": 4,
+        "name": "CP Brasil",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Brasil 714 - 792 Piso 3  ",
+        "secondAddress": "Breña Lima Lima",
+        "city": "Lima",
+        "description": "CINEPLANET BRASIL",
+        "path": "cp-brasil",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/bc5cbd20-d5f2-4e79-931f-d31911c26968",
+        "peliculas": [
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"LB"
+    },
+    {
+        "ID": 39,
+        "name": "CP Cajamarca",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Vía de Evitamiento Norte",
+        "secondAddress": "Cajamarca Cajamarca Cajamarca",
+        "city": "Cajamarca",
+        "description": "CINEPLANET CAJAMARCA",
+        "path": "cp-cajamarca",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/35bd2686-f0f3-42aa-881c-627cb5f59e43",
+        "peliculas": [
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"CJ"
+    },
+    {
+        "ID": 50,
+        "name": "CP Caminos del Inca",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av Caminos del Inca 241 Int401",
+        "secondAddress": "Santiago de Surco Lima Lima",
+        "city": "Lima",
+        "description": "CINEPLANET CAMINOS DEL INCA",
+        "path": "cp-caminos-del-inca",
+        "formats": [
+            "2D",
+            "REGULAR"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/3c788c2c-2fdf-452c-867a-69da795373cd",
+        "peliculas": [
+            {
+                "pelicula": "Underwater",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
+        ,"siglas":"CI"
+    },
+    {
+        "ID": 54,
+        "name": "CP Canto Grande",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "AV CANTO GRANDE MZ.A LT.15",
+        "secondAddress": "San Juan de Lurigancho Lima",
+        "city": "Lima",
+        "description": "CINEPLANET CANTO GRANDE",
+        "path": "cp-canto-grande",
+        "formats": [
+            "2D",
+            "REGULAR"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/778b2dad-e44a-41af-8f11-694bf4b4f40b",
+        "peliculas": [
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
+        ,"siglas":"CG"
+    },
+    {
+        "ID": 6,
+        "name": "CP Centro",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Jr. De la Unión 819  ",
+        "secondAddress": "Cercado Lima Lima",
+        "city": "Lima",
+        "description": "CINEPLANET CENTRO",
+        "path": "cp-centro",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/a98e74ee-4e80-40f7-9c5f-4bdde69f948d",
+        "peliculas": [
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"CT"
+    },
+    {
+        "ID": 7,
+        "name": "CP Centro Civico",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Inca Garcilazo de la Vega ",
+        "secondAddress": "Cercado Lima Lima",
+        "city": "Lima",
+        "description": "CINEPLANET CENTRO CIVICO",
+        "path": "cp-centro-civico",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/ef527115-a564-4d62-acc9-e7579913705c",
+        "peliculas": [
+            {
+                "pelicula": "Three Christs",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"CC"
+    },
+    {
+        "ID": 8,
+        "name": "CP Chiclayo",
+        "phoneNumber": "016194400",
+        "emailAddress": "",
+        "address": "Av. Miguel de Cervantes 300",
+        "secondAddress": "Chiclayo Chiclayo Chiclayo",
+        "city": "Chiclayo",
+        "description": "CINEPLANET CHICLAYO",
+        "path": "cp-chiclayo",
+        "formats": [
+            "2D",
+            "REGULAR",
+            "3D"
+        ],
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/c6fa7835-f590-4290-8b1e-68338f63841c",
+        "peliculas": [
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
+        ,"siglas":"CX"
+    }
+]

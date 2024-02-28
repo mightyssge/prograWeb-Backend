@@ -1,10 +1,10 @@
-import json
-
-from django.http import HttpResponse
 from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-
-from .models import Actor, Genre, Pelicula, Reserva
+import json
+from django.shortcuts import get_object_or_404
+from .models import *
+from django.db import IntegrityError
 
 #PATH : /cines/verPeliculas
 
@@ -43,11 +43,6 @@ def verPeliculasEndpoint(request):
 
         return HttpResponse(json.dumps(dataResponse))
 
-
-
-
-    
-    
 @csrf_exempt
 def guardar_reserva(request):
     if request.method == "POST":
@@ -75,3 +70,50 @@ def guardar_reserva(request):
         }
         
         return HttpResponse(json.dumps(respDict))
+    
+
+def verReservasEndpoint(request):
+    if request.method == "GET":
+        codigo = request.GET.get("codigo")
+
+        if not codigo:
+            return JsonResponse({"msg": "Se requiere el código para buscar las reservas."}, status=400)
+
+        reservas = Reserva.objects.filter(r_codigo=codigo)
+
+        dataResponse = []
+        for reserva in reservas:
+            dataResponse.append({
+                "id": reserva.pk,
+                "nombre": reserva.r_name,
+                "apellido": reserva.r_apellido,
+                "codigo": reserva.r_codigo,
+                "cantidad": reserva.r_cantidad,
+                "pelicula": reserva.r_pelicula,
+                "horario": reserva.r_horario
+            })
+
+        return JsonResponse(dataResponse, safe=False)
+
+    else:
+        return JsonResponse({"error": "Método no permitido."}, status=405)
+
+    
+@csrf_exempt
+def importar_salas(request):
+    try:
+        with open('static/data/salas.json', 'r') as file:
+            data = json.load(file)
+
+            for sala_data in data:
+                sala = Sala.objects.create(
+                    siglas=sala_data['siglas'],
+                    nombre=sala_data['name'],
+                    direccion=sala_data['address'],
+                    imagen=sala_data['img'],
+                    path=sala_data['path']
+                )
+
+        return JsonResponse({'message': 'Datos de salas importados correctamente.'})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)

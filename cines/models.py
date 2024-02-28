@@ -45,10 +45,10 @@ class Reserva(models.Model):
         return self.r_name
     
 class Sala(models.Model):
-    siglas = models.CharField(max_length=10)
+    siglas = models.CharField(max_length=50)
     nombre = models.CharField(max_length=100)
     direccion = models.TextField()
-    imagen = models.TextField()
+    imagen = models.URLField()
     path = models.TextField()
 
     def __str__(self):
