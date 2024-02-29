@@ -164,7 +164,6 @@ def importar_peliculas(request):
 
 
 
-        
 @csrf_exempt
 def importar_salas(request):
     try:
@@ -174,14 +173,13 @@ def importar_salas(request):
             for sala_data in data:
                 sala = Sala.objects.create(
                     siglas=sala_data['siglas'],
-                    nombre=sala_data['name'],
-                    direccion=sala_data['address'],
-                    imagen=sala_data['img'],
+                    nombre=sala_data['nombre'],
+                    direccion=sala_data['direccion'],
+                    imagen=sala_data['imagen'],
                     path=sala_data['path'],
-                    city = sala_data['city']
+                    city=sala_data['city']
                 )
 
         return JsonResponse({'message': 'Datos de salas importados correctamente.'})
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
- 
