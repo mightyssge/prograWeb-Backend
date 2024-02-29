@@ -12,6 +12,7 @@ class Usuario(models.Model):
 
 class Pelicula(models.Model):
     title = models.CharField(max_length=100)
+    siglas = models.CharField(max_length=10)
     year = models.IntegerField()
     href = models.CharField(max_length=200)
     extract = models.TextField()
@@ -37,15 +38,40 @@ class GeneroPelicula(models.Model):  # Cambiado el nombre de la clase
     def __str__(self):
         return self.genre_name
 
+
 class Sala(models.Model):
     siglas = models.CharField(max_length=50)
     nombre = models.CharField(max_length=100)
     direccion = models.TextField()
     imagen = models.URLField()
     path = models.TextField()
+    city = models.CharField(max_length=50)
 
     def __str__(self):
         return self.nombre
 
+class FormatoSala(models.Model):
+    form_name = models.CharField(max_length=50)
+    sala = models.ForeignKey(Sala, on_delete = models.CASCADE)
+    
+    def __str__(self):
+        return self.form_name
 
+class Ventana(models.Model):
+    fecha = models.DateField()
+    hora = models.TimeField()
+
+    def __str__(self):
+            return f'{str(self.fecha)} | {str(self.hora)}'
+
+
+class Funcion(models.Model):
+    pelicula_id = models.ForeignKey(Pelicula, on_delete=models.SET_NULL, null=True)
+    sala_id = models.ForeignKey(Sala, on_delete=models.SET_NULL, null=True)
+    ventana_id = models.ForeignKey(Ventana, on_delete=models.SET_NULL, null=True)
+
+class Reserva(models.Model):
+    funcion = models.ForeignKey(Funcion, on_delete=models.SET_NULL, null=True)
+    usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
+    cantidad = models.IntegerField()
 

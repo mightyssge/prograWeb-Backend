@@ -1,0 +1,244 @@
+[
+    {
+        "model": "cines.FormatoSala",
+        "pk": 1,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 2,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 3,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 4,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 5,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 6,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 7,
+        "fields": {
+            "sala_id": 3,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 8,
+        "fields": {
+            "sala_id": 3,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 9,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 10,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 11,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 12,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 13,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 14,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 15,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 16,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 17,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 18,
+        "fields": {
+            "sala_id": 7,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 19,
+        "fields": {
+            "sala_id": 7,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 20,
+        "fields": {
+            "sala_id": 8,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 21,
+        "fields": {
+            "sala_id": 8,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 22,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 23,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 24,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 25,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 26,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 27,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 28,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 29,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 30,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "3D"
+        }
+    }
+]
+   
+   

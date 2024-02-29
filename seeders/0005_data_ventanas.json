@@ -1,0 +1,266 @@
+[
+    {
+        "model": "cines.Ventana",
+        "pk": 1,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "17:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 2,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 3,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "16:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 4,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "17:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 5,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 6,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "20:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 7,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 8,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "19:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 9,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "20:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 10,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "21:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 11,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "23:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 12,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "15:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 13,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "16:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 14,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "17:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 15,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 16,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "19:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 17,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "20:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 18,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "21:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 19,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "23:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 20,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "16:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 21,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 22,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "21:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 23,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "23:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 24,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 25,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "19:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 26,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "21:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 27,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "23:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 28,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "16:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 29,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "17:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 30,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "18:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 31,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "20:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 32,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "21:00:00"
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 33,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "22:00:00"
+        }
+    }
+]
