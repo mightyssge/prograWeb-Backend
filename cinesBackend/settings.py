@@ -80,13 +80,14 @@ WSGI_APPLICATION = 'cinesBackend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'peliculasdb',
-        'USER' : 'postgres',
-        'PASSWORD' : 'postgres',
-        'HOST' : 'localhost',
+        'USER' : 'usuario',
+        'PASSWORD' : 'password',
+        'HOST' : '127.0.0.1',
         'PORT' : '5432'
     }
 }

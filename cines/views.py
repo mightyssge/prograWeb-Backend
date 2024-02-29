@@ -73,20 +73,20 @@ def verPeliculasEndpoint(request):
 
             #dos relaciones one to many para genero y actor
             listaActoresQuerySet = ActorPelicula.objects.filter(pelicula_id = pelicula.pk)
-            listaActores = list(listaActoresQuerySet.values())
+            listaActores = [actor.name for actor in listaActoresQuerySet]
 
             listaGenerosQuerySet = GeneroPelicula.objects.filter(pelicula_id = pelicula.pk)
-            listaGeneros = list(listaGenerosQuerySet.values())
+            listaGeneros = [genero.genre_name for genero in listaGenerosQuerySet]
 
             dataResponse.append({
                 "id" : pelicula.pk,
                 "title" : pelicula.title,
                 "year" : pelicula.year,
-                "cast" : listaActores,
-                "genres" : listaGeneros,
                 "extract" : pelicula.extract,
                 "thumbnail" : pelicula.thumbnail,
-                "path" : pelicula.path
+                "path" : pelicula.path,
+                "genres" : listaGeneros,
+                "cast" : listaActores
             })
 
         return HttpResponse(json.dumps(dataResponse))
