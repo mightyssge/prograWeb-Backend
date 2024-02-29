@@ -140,7 +140,7 @@ def verFuncionesxPeliculaEndpoint (request):
 
         if id_pelicula == "":
             errorDict = {
-                "msg": "Debe proporcionar un path de película"
+                "msg": "Debe proporcionar un id de película"
             }
             return JsonResponse(errorDict, status=400)
         else:
@@ -154,7 +154,6 @@ def verFuncionesxPeliculaEndpoint (request):
             #obtener los datos de la ventana
             listaventanas = Ventana.objects.filter(funcion_id=funcion.pk)
             ventanas = [f'{str(ventana.fecha)} | {str(ventana.hora)}' for ventana in listaventanas]
-            print(ventanas)
 
             dataResponse.append({
                 "id" : funcion.pk,  
@@ -170,7 +169,36 @@ def verFuncionesxPeliculaEndpoint (request):
     
 
 def verFuncionesxSalaEndpoint (request):
-    pass
+    if request.method == "GET":
+        id_sala = request.GET.get("idsala")
+
+
+        if id_sala == "" :
+            errorDict = {
+                "msg": "Debe proporcionar un id de sala"
+            }
+            return JsonResponse(errorDict, status=400)
+        else:
+            # Si ha enviado filtro
+            listaFunciones = Funcion.objects.filter(sala_id=id_sala)
+
+        dataResponse = []
+        
+
+        for funcion in listaFunciones:
+            listaventanas = Ventana.objects.filter(funcion_id=funcion.pk)
+            ventanas = [f'{str(ventana.fecha)} | {str(ventana.hora)}' for ventana in listaventanas]
+            dataResponse.append({
+                "id" : funcion.pk,  
+                "pelicula" : funcion.pelicula_id.pk, #necesito el nombre de la sala , sus siglas , su address 
+                "peliculasiglas" : funcion.pelicula_id.siglas,
+                "peliculanombre" : funcion.pelicula_id.title,
+                "peliculaextract" : funcion.pelicula_id.extract,
+                "ventanas " : ventanas
+            })
+
+        return HttpResponse(json.dumps(dataResponse))
+    
 
  
 
