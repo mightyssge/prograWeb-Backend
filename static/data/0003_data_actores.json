@@ -1,0 +1,490 @@
+[
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 1,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Andrea Riseborough"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 2,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Demi\u00e1n Bichir"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 3,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "John Cho"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 4,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Betty Gilpin"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 5,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Lin Shaye"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 6,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Jacki Weaver"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 7,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Kristen Stewart"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 8,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Vincent Cassel"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 9,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Jessica Henwick"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 10,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "John Gallagher Jr."
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 11,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Mamoudou Athie"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 12,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "T.J. Miller"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 13,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Tiffany Haddish"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 14,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Rose Byrne"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 15,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Salma Hayek"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 16,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Jennifer Coolidge"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 17,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Billy Porter"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 18,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Richard Gere"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 19,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Peter Dinklage"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 20,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Walton Goggins"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 21,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Bradley Whitford"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 22,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Josh Hartnett"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 23,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Margarita Levieva"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 24,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Chandler Riggs"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 25,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Bruce Dern"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 26,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Owen Teague"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 27,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Freya Tingley"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 28,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Simon Abkarian"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 29,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Rutger Hauer"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 30,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "James Faulkner"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 31,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Mena Suvari"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 32,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Nick Stahl"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 33,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Taryn Manning"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 34,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Will Smith"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 35,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Martin Lawrence"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 36,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Vanessa Hudgens"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 37,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Alexander Ludwig"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 38,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Charles Melton"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 39,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Paola N\u00fa\u00f1ez"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 40,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Kate del Castillo"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 41,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Nicky Jam"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 42,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Joe Pantoliano"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 43,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Robert Downey Jr."
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 44,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Antonio Banderas"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 45,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Michael Sheen"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 46,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Emma Thompson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 47,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Rami Malek"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 48,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "John Cena"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 49,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Kumail Nanjiani"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 50,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Octavia Spencer"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 51,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Tom Holland"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 52,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Craig Robinson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 53,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Ralph Fiennes"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 54,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Selena Gomez"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 55,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Marion Cotillard"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 56,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Crystal R. Fox"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 57,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Phylicia Rashad"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 58,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Bresha Webb"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 59,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Mehcad Brooks"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 60,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Cicely Tyson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 61,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Tyler Perry"
+        }
+    }
+]
