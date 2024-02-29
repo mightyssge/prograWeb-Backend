@@ -136,7 +136,6 @@ from .models import Pelicula
 
 def verPelicula(request):
     if request.method == "GET":
-        # Obtener el valor del parámetro "path" de la solicitud GET
         peliculapath = request.GET.get("path")
 
         if peliculapath is None:
@@ -146,7 +145,6 @@ def verPelicula(request):
             return JsonResponse(errorDict, status=400)
 
         try:
-            # Buscar la película en función del path proporcionado
             pelicula = Pelicula.objects.get(path=peliculapath)
         except Pelicula.DoesNotExist:
             errorDict = {
@@ -154,7 +152,16 @@ def verPelicula(request):
             }
             return JsonResponse(errorDict, status=404)
 
-        # Crear el diccionario de respuesta con los datos de la película encontrada
+        # Obtener los géneros asociados a la película
+        generos_pelicula = GeneroPelicula.objects.filter(pelicula=pelicula)
+        actores = ActorPelicula.objects.filter(pelicula=pelicula)
+
+        # Obtener los nombres de los géneros
+        nombres_generos = [genero.genre_name for genero in generos_pelicula]
+        lista_actores = [actor.name for actor in actores]
+
+       
+
         respDict = {
             "id": pelicula.pk,
             "nombre": pelicula.title,
@@ -162,9 +169,10 @@ def verPelicula(request):
             "thumbnail": pelicula.thumbnail,
             "extract": pelicula.extract,
             "path": pelicula.path,
+            "generos": nombres_generos,  # Añadir los nombres de los géneros a la respuesta
+            "actores": lista_actores,
         }
         return JsonResponse(respDict)
-
 
  
 
