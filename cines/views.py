@@ -91,6 +91,46 @@ def verPeliculasEndpoint(request):
 
         return HttpResponse(json.dumps(dataResponse))
 
+def verPeliculaEndpoint(request):
+    if request.method == "GET":
+        peliculapath = request.GET.get("path")
+
+        if peliculapath is None:
+            errorDict = {
+                "msg": "Debe proporcionar un path de película"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            pelicula = Pelicula.objects.get(path=peliculapath)
+        except Pelicula.DoesNotExist:
+            errorDict = {
+                "msg": "La película con el path proporcionado no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        # Obtener los géneros asociados a la película
+        generos_pelicula = GeneroPelicula.objects.filter(pelicula=pelicula)
+        actores = ActorPelicula.objects.filter(pelicula=pelicula)
+
+        # Obtener los nombres de los géneros
+        nombres_generos = [genero.genre_name for genero in generos_pelicula]
+        lista_actores = [actor.name for actor in actores]
+
+       
+
+        respDict = {
+            "id": pelicula.pk,
+            "nombre": pelicula.title,
+            "anho": pelicula.year,
+            "thumbnail": pelicula.thumbnail,
+            "extract": pelicula.extract,
+            "path": pelicula.path,
+            "generos": nombres_generos,  # Añadir los nombres de los géneros a la respuesta
+            "actores": lista_actores,
+        }
+        return JsonResponse(respDict)
+
 @csrf_exempt
 def verSalasEndpoint(request):
     if request.method == "GET":
@@ -117,98 +157,71 @@ def verSalasEndpoint(request):
                 "formato" : listaFormatos
             })
         return HttpResponse(json.dumps(dataResponse))
-            
-           
-            
-            
-            
-            
-            
-             
-@csrf_exempt
-def importar_peliculas(request):
-    try:
-        with open('static/data/peliculas.json', 'r') as file:
-            data = json.load(file)
-            
-            for pelicula_data in data:
-                # Crear la película
-                pelicula = Pelicula.objects.create(
-                    title=pelicula_data['title'],
-                    year=pelicula_data['year'],
-                    href=pelicula_data['href'],
-                    extract=pelicula_data['extract'],
-                    thumbnail=pelicula_data['thumbnail'],
-                    thumbnail_width=pelicula_data['thumbnail_width'],
-                    thumbnail_height=pelicula_data['thumbnail_height'],
-                    path=pelicula_data['path']
-                )
-                
-                # Crear los géneros de la película
-                for genero in pelicula_data['genres']:
-                    GeneroPelicula.objects.create(
-                        pelicula=pelicula,
-                        genero=genero
-                    )
-                
-                # Crear los actores de la película
-                for actor in pelicula_data['cast']:
-                    ActorPelicula.objects.create(
-                        pelicula=pelicula,
-                        name=actor
-                    )
-                
-        return JsonResponse({'message': 'Datos de películas importados correctamente.'})
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
+
+def verFuncionesxPeliculaEndpoint (request):
+    if request.method == "GET":
+        id_pelicula = request.GET.get("idpelicula")
+
+        if id_pelicula == "":
+            errorDict = {
+                "msg": "Debe proporcionar un id de película"
+            }
+            return JsonResponse(errorDict, status=400)
+        else:
+            # Si ha enviado filtro
+            listaFunciones = Funcion.objects.filter(pelicula_id=id_pelicula)
 
 
+        dataResponse = []
+        for funcion in listaFunciones:
+            
+            #obtener los datos de la ventana
+            listaventanas = Ventana.objects.filter(funcion_id=funcion.pk)
+            ventanas = [f'{str(ventana.fecha)} | {str(ventana.hora)}' for ventana in listaventanas]
 
-@csrf_exempt
-def importar_salas(request):
-    try:
-        with open('static/data/salas.json', 'r') as file:
-            data = json.load(file)
+            dataResponse.append({
+                "id" : funcion.pk,  
+                "sala" : funcion.sala_id.pk, #necesito el nombre de la sala , sus siglas , su address 
+                "salasiglas" : funcion.sala_id.siglas,
+                "salanombre" : funcion.sala_id.nombre,
+                "salaadress" : funcion.sala_id.direccion,
+                "ventanas" : ventanas
+            })
 
-            for sala_data in data:
-                sala = Sala.objects.create(
-                    siglas=sala_data['siglas'],
-                    nombre=sala_data['nombre'],
-                    direccion=sala_data['direccion'],
-                    imagen=sala_data['imagen'],
-                    path=sala_data['path'],
-                    city=sala_data['city']
-                )
-
-        return JsonResponse({'message': 'Datos de salas importados correctamente.'})
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
+        return HttpResponse(json.dumps(dataResponse))
+        
     
 
-@csrf_exempt
-def guardar_reserva(request):
-    if request.method == "POST":
-        data = request.body.decode('utf-8')
-        reservaDict = json.loads(data)
+def verFuncionesxSalaEndpoint (request):
+    if request.method == "GET":
+        id_sala = request.GET.get("idsala")
 
-        if '' in (reservaDict["nombre"], reservaDict["apellido"], reservaDict["codigo"], reservaDict["cantidad"], reservaDict["pelicula"], reservaDict["horario"]):
+
+        if id_sala == "" :
             errorDict = {
-                "msg": "Debe ingresar todos los datos."
+                "msg": "Debe proporcionar un id de sala"
             }
-            return HttpResponse(json.dumps(errorDict))
+            return JsonResponse(errorDict, status=400)
+        else:
+            # Si ha enviado filtro
+            listaFunciones = Funcion.objects.filter(sala_id=id_sala)
 
-        reserva = Reserva2(
-            r_name=reservaDict["nombre"],
-            r_apellido=reservaDict["apellido"],
-            r_codigo=reservaDict["codigo"],
-            r_cantidad=reservaDict["cantidad"],
-            r_pelicula=reservaDict["pelicula"],
-            r_horario=reservaDict["horario"]
-        )
-        reserva.save()
+        dataResponse = []
+        
 
-        respDict = {
-            "msg": "Reserva guardada exitosamente."
-        }
+        for funcion in listaFunciones:
+            listaventanas = Ventana.objects.filter(funcion_id=funcion.pk)
+            ventanas = [f'{str(ventana.fecha)} | {str(ventana.hora)}' for ventana in listaventanas]
+            dataResponse.append({
+                "id" : funcion.pk,  
+                "pelicula" : funcion.pelicula_id.pk, #necesito el nombre de la sala , sus siglas , su address 
+                "peliculasiglas" : funcion.pelicula_id.siglas,
+                "peliculanombre" : funcion.pelicula_id.title,
+                "peliculaextract" : funcion.pelicula_id.extract,
+                "ventanas " : ventanas
+            })
 
-        return HttpResponse(json.dumps(respDict))
+        return HttpResponse(json.dumps(dataResponse))
+    
+
+ 

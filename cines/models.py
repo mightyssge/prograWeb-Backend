@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Usuario(models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)  # Cambiado de "apellido" a "apellidos"
@@ -10,9 +9,10 @@ class Usuario(models.Model):
     class Meta:
         app_label='cines'
 
+
 class Pelicula(models.Model):
-    
     title = models.CharField(max_length=100)
+    siglas = models.CharField(max_length=10)
     year = models.IntegerField()
     href = models.CharField(max_length=200)
     extract = models.TextField()
@@ -23,6 +23,21 @@ class Pelicula(models.Model):
 
     def __str__(self):
         return self.title
+
+class ActorPelicula(models.Model):  # Cambiado el nombre de la clase
+    name = models.CharField(max_length=100)
+    pelicula = models.ForeignKey(Pelicula, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+class GeneroPelicula(models.Model):  # Cambiado el nombre de la clase
+    genre_name = models.CharField(max_length=100)
+    pelicula = models.ForeignKey(Pelicula, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.genre_name
+
 
 class Sala(models.Model):
     siglas = models.CharField(max_length=50)
@@ -42,45 +57,24 @@ class FormatoSala(models.Model):
     def __str__(self):
         return self.form_name
 
-class ActorPelicula(models.Model):  # Cambiado el nombre de la clase
-    name = models.CharField(max_length=100)
-    pelicula = models.ForeignKey(Pelicula, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.name
-
-class GeneroPelicula(models.Model):  # Cambiado el nombre de la clase
-    genre_name = models.CharField(max_length=100)
-    pelicula = models.ForeignKey(Pelicula, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.genre_name
-
-
 class Ventana(models.Model):
     fecha = models.DateField()
     hora = models.TimeField()
+    funcion_id = models.ForeignKey('Funcion', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
             return f'{str(self.fecha)} | {str(self.hora)}'
 
+
 class Funcion(models.Model):
     pelicula_id = models.ForeignKey(Pelicula, on_delete=models.SET_NULL, null=True)
     sala_id = models.ForeignKey(Sala, on_delete=models.SET_NULL, null=True)
-    ventana_id = models.ForeignKey(Ventana, on_delete=models.SET_NULL, null=True)
+    def __str__(self):
+        return str(self.pk)
 
 class Reserva(models.Model):
     funcion = models.ForeignKey(Funcion, on_delete=models.SET_NULL, null=True)
     usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
     cantidad = models.IntegerField()
-    
-class Reserva2(models.Model):
-    r_name = models.CharField(max_length=100)
-    r_apellido = models.CharField(max_length=100)
-    r_codigo = models.CharField(max_length=100)
-    r_cantidad = models.IntegerField()  
-    r_pelicula = models.CharField(max_length=100)
-    r_horario = models.CharField(max_length=100)
-    
     def __str__(self):
-        return self.r_name
+        return str(self.pk)
