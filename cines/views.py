@@ -66,7 +66,7 @@ def verPeliculasEndpoint(request):
             listaPeliculaFiltrada = Pelicula.objects.all()
         else:
             # Si ha enviado filtro
-            listaPeliculaFiltrada = Pelicula.objects.filter(title__contains=titleFilter)
+            listaPeliculaFiltrada = Pelicula.objects.filter(title__icontains=titleFilter)
 
         dataResponse = []
         for pelicula in listaPeliculaFiltrada:
