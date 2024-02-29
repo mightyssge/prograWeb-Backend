@@ -8,7 +8,8 @@ urlpatterns = [
     path('users', usuariosEndpoint),
     path('createuser', createUsersEndpoint),
     path('importar-peliculas/', importar_peliculas, name='importar_peliculas'),
-    path('ver-peliculas/',verPeliculasEndpoint)
+    path('ver-pelicula/', verPelicula, name='ver_pelicula'),
+
     
     
 ]

@@ -128,7 +128,43 @@ def importar_peliculas(request):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
 
-        
+from django.http import JsonResponse
+from .models import Pelicula
+
+from django.http import JsonResponse
+from .models import Pelicula
+
+def verPelicula(request):
+    if request.method == "GET":
+        # Obtener el valor del parámetro "path" de la solicitud GET
+        peliculapath = request.GET.get("path")
+
+        if peliculapath is None:
+            errorDict = {
+                "msg": "Debe proporcionar un path de película"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            # Buscar la película en función del path proporcionado
+            pelicula = Pelicula.objects.get(path=peliculapath)
+        except Pelicula.DoesNotExist:
+            errorDict = {
+                "msg": "La película con el path proporcionado no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        # Crear el diccionario de respuesta con los datos de la película encontrada
+        respDict = {
+            "id": pelicula.pk,
+            "nombre": pelicula.title,
+            "anho": pelicula.year,
+            "thumbnail": pelicula.thumbnail,
+            "extract": pelicula.extract,
+            "path": pelicula.path,
+        }
+        return JsonResponse(respDict)
+
 
  
 
