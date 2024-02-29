@@ -118,7 +118,7 @@ def verSalasEndpoint(request):
             })
         return HttpResponse(json.dumps(dataResponse))
             
-            
+           
             
             
             
@@ -183,3 +183,32 @@ def importar_salas(request):
         return JsonResponse({'message': 'Datos de salas importados correctamente.'})
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+    
+
+@csrf_exempt
+def guardar_reserva(request):
+    if request.method == "POST":
+        data = request.body.decode('utf-8')
+        reservaDict = json.loads(data)
+
+        if '' in (reservaDict["nombre"], reservaDict["apellido"], reservaDict["codigo"], reservaDict["cantidad"], reservaDict["pelicula"], reservaDict["horario"]):
+            errorDict = {
+                "msg": "Debe ingresar todos los datos."
+            }
+            return HttpResponse(json.dumps(errorDict))
+
+        reserva = Reserva2(
+            r_name=reservaDict["nombre"],
+            r_apellido=reservaDict["apellido"],
+            r_codigo=reservaDict["codigo"],
+            r_cantidad=reservaDict["cantidad"],
+            r_pelicula=reservaDict["pelicula"],
+            r_horario=reservaDict["horario"]
+        )
+        reserva.save()
+
+        respDict = {
+            "msg": "Reserva guardada exitosamente."
+        }
+
+        return HttpResponse(json.dumps(respDict))
