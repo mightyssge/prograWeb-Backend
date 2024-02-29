@@ -91,44 +91,86 @@ def verPeliculasEndpoint(request):
 
         return HttpResponse(json.dumps(dataResponse))
 
-@csrf_exempt
-def importar_peliculas(request):
-    try:
-        with open('static/data/peliculas.json', 'r') as file:
-            data = json.load(file)
-            
-            for pelicula_data in data:
-                # Crear la película
-                pelicula = Pelicula.objects.create(
-                    title=pelicula_data['title'],
-                    year=pelicula_data['year'],
-                    href=pelicula_data['href'],
-                    extract=pelicula_data['extract'],
-                    thumbnail=pelicula_data['thumbnail'],
-                    thumbnail_width=pelicula_data['thumbnail_width'],
-                    thumbnail_height=pelicula_data['thumbnail_height'],
-                    path=pelicula_data['path']
-                )
-                
-                # Crear los géneros de la película
-                for genero in pelicula_data['genres']:
-                    GeneroPelicula.objects.create(
-                        pelicula=pelicula,
-                        genero=genero
-                    )
-                
-                # Crear los actores de la película
-                for actor in pelicula_data['cast']:
-                    ActorPelicula.objects.create(
-                        pelicula=pelicula,
-                        name=actor
-                    )
-                
-        return JsonResponse({'message': 'Datos de películas importados correctamente.'})
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
+def verPeliculaEndpoint(request):
+    if request.method == "GET":
+        peliculapath = request.GET.get("path")
 
+        if peliculapath is None:
+            errorDict = {
+                "msg": "Debe proporcionar un path de película"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            pelicula = Pelicula.objects.get(path=peliculapath)
+        except Pelicula.DoesNotExist:
+            errorDict = {
+                "msg": "La película con el path proporcionado no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        # Obtener los géneros asociados a la película
+        generos_pelicula = GeneroPelicula.objects.filter(pelicula=pelicula)
+        actores = ActorPelicula.objects.filter(pelicula=pelicula)
+
+        # Obtener los nombres de los géneros
+        nombres_generos = [genero.genre_name for genero in generos_pelicula]
+        lista_actores = [actor.name for actor in actores]
+
+       
+
+        respDict = {
+            "id": pelicula.pk,
+            "nombre": pelicula.title,
+            "anho": pelicula.year,
+            "thumbnail": pelicula.thumbnail,
+            "extract": pelicula.extract,
+            "path": pelicula.path,
+            "generos": nombres_generos,  # Añadir los nombres de los géneros a la respuesta
+            "actores": lista_actores,
+        }
+        return JsonResponse(respDict)
+
+def verSalaEndpoint (request):
+    pass
+
+def verFuncionesxPeliculaEndpoint (request):
+    if request.method == "GET":
+        id_pelicula = request.GET.get("idpelicula")
+
+        if id_pelicula == "":
+            errorDict = {
+                "msg": "Debe proporcionar un path de película"
+            }
+            return JsonResponse(errorDict, status=400)
+        else:
+            # Si ha enviado filtro
+            listaFunciones = Funcion.objects.filter(pelicula_id=id_pelicula)
+
+
+        dataResponse = []
+        for funcion in listaFunciones:
+            
+            #obtener los datos de la ventana
+            listaventanas = Ventana.objects.filter(funcion_id=funcion.pk)
+            ventanas = [f'{str(ventana.fecha)} | {str(ventana.hora)}' for ventana in listaventanas]
+            print(ventanas)
+
+            dataResponse.append({
+                "id" : funcion.pk,  
+                "sala" : funcion.sala_id.pk, #necesito el nombre de la sala , sus siglas , su address 
+                "salasiglas" : funcion.sala_id.siglas,
+                "salanombre" : funcion.sala_id.nombre,
+                "salaadress" : funcion.sala_id.direccion,
+                "ventanas" : ventanas
+            })
+
+        return HttpResponse(json.dumps(dataResponse))
         
+    
+
+def verFuncionesxSalaEndpoint (request):
+    pass
 
  
 

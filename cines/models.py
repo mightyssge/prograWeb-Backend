@@ -60,6 +60,7 @@ class FormatoSala(models.Model):
 class Ventana(models.Model):
     fecha = models.DateField()
     hora = models.TimeField()
+    funcion_id = models.ForeignKey('Funcion', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
             return f'{str(self.fecha)} | {str(self.hora)}'
@@ -68,10 +69,13 @@ class Ventana(models.Model):
 class Funcion(models.Model):
     pelicula_id = models.ForeignKey(Pelicula, on_delete=models.SET_NULL, null=True)
     sala_id = models.ForeignKey(Sala, on_delete=models.SET_NULL, null=True)
-    ventana_id = models.ForeignKey(Ventana, on_delete=models.SET_NULL, null=True)
+    def __str__(self):
+        return str(self.pk)
 
 class Reserva(models.Model):
     funcion = models.ForeignKey(Funcion, on_delete=models.SET_NULL, null=True)
     usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
     cantidad = models.IntegerField()
+    def __str__(self):
+        return str(self.pk)
 

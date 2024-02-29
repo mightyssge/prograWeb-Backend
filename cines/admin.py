@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Usuario, Pelicula, ActorPelicula, GeneroPelicula , Sala, FormatoSala, Ventana , Reserva, Funcion
+from .models import Usuario, Pelicula, ActorPelicula, GeneroPelicula , Sala, FormatoSala, Ventana , Reserva, Funcion 
 
 class UsuarioAdmin(admin.ModelAdmin):
     list_display = ["id", "nombre", "apellido", "correo", "password"]
@@ -20,10 +20,10 @@ class FormatoSalaAdmin(admin.ModelAdmin):
     list_display = ['form_name', 'sala']
 
 class VentanaAdmin(admin.ModelAdmin):
-    list_display = ['fecha', 'hora']
+    list_display = ['fecha', 'hora' , 'funcion_id']
 
 class FuncionAdmin(admin.ModelAdmin):
-    list_display = ['pelicula_id', 'sala_id', 'ventana_id']
+    list_display = ['pelicula_id', 'sala_id']
 
 class ReservaAdmin(admin.ModelAdmin):
     list_display = ['funcion', 'usuario']
@@ -37,4 +37,5 @@ admin.site.register(FormatoSala, FormatoSalaAdmin)
 admin.site.register(Ventana, VentanaAdmin)
 admin.site.register(Funcion, FuncionAdmin)
 admin.site.register(Reserva, ReservaAdmin)
+
 

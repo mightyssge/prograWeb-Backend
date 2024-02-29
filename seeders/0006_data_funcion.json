@@ -4,8 +4,7 @@
       "pk": 1,
       "fields": {
         "pelicula_id": 1,
-        "sala_id": 1,
-        "ventana_id": 1
+        "sala_id": 1
       }
     },
     {
@@ -13,8 +12,7 @@
       "pk": 2,
       "fields": {
         "pelicula_id": 1,
-        "sala_id": 2,
-        "ventana_id": 2
+        "sala_id": 2
       }
     },
     {
@@ -22,8 +20,7 @@
       "pk": 3,
       "fields": {
         "pelicula_id": 1,
-        "sala_id": 3,
-        "ventana_id": 3
+        "sala_id": 3
       }
     },
     {
@@ -31,8 +28,7 @@
       "pk": 4,
       "fields": {
         "pelicula_id": 2,
-        "sala_id": 4,
-        "ventana_id": 4
+        "sala_id": 4
       }
     },
     {
@@ -40,8 +36,7 @@
       "pk": 5,
       "fields": {
         "pelicula_id": 2,
-        "sala_id": 5,
-        "ventana_id": 5
+        "sala_id": 5
       }
     },
     {
@@ -49,8 +44,7 @@
       "pk": 6,
       "fields": {
         "pelicula_id": 2,
-        "sala_id": 6,
-        "ventana_id": 6
+        "sala_id": 6
       }
     },
     {
@@ -58,8 +52,7 @@
       "pk": 7,
       "fields": {
         "pelicula_id": 3,
-        "sala_id": 7,
-        "ventana_id": 7
+        "sala_id": 7
       }
     },
     {
@@ -67,8 +60,7 @@
       "pk": 8,
       "fields": {
         "pelicula_id": 3,
-        "sala_id": 8,
-        "ventana_id": 8
+        "sala_id": 8
       }
     },
     {
@@ -76,8 +68,7 @@
       "pk": 9,
       "fields": {
         "pelicula_id": 3,
-        "sala_id": 9,
-        "ventana_id": 9
+        "sala_id": 9
       }
     },
     {
@@ -85,8 +76,7 @@
       "pk": 10,
       "fields": {
         "pelicula_id": 4,
-        "sala_id": 10,
-        "ventana_id": 10
+        "sala_id": 10
       }
     },
     {
@@ -94,8 +84,7 @@
       "pk": 11,
       "fields": {
         "pelicula_id": 4,
-        "sala_id": 1,
-        "ventana_id": 11
+        "sala_id": 1
       }
     },
     {
@@ -103,8 +92,7 @@
       "pk": 12,
       "fields": {
         "pelicula_id": 4,
-        "sala_id": 2,
-        "ventana_id": 12
+        "sala_id": 2
       }
     },
     {
@@ -112,8 +100,7 @@
       "pk": 13,
       "fields": {
         "pelicula_id": 5,
-        "sala_id": 3,
-        "ventana_id": 13
+        "sala_id": 3
       }
     },
     {
@@ -121,8 +108,7 @@
       "pk": 14,
       "fields": {
         "pelicula_id": 5,
-        "sala_id": 4,
-        "ventana_id": 14
+        "sala_id": 4
       }
     },
     {
@@ -130,8 +116,7 @@
       "pk": 15,
       "fields": {
         "pelicula_id": 5,
-        "sala_id": 5,
-        "ventana_id": 15
+        "sala_id": 5
       }
     },
     {
@@ -139,8 +124,7 @@
       "pk": 16,
       "fields": {
         "pelicula_id": 6,
-        "sala_id": 6,
-        "ventana_id": 16
+        "sala_id": 6
       }
     },
     {
@@ -148,8 +132,7 @@
       "pk": 17,
       "fields": {
         "pelicula_id": 6,
-        "sala_id": 7,
-        "ventana_id": 17
+        "sala_id": 7
       }
     },
     {
@@ -157,8 +140,7 @@
       "pk": 18,
       "fields": {
         "pelicula_id": 6,
-        "sala_id": 8,
-        "ventana_id": 18
+        "sala_id": 8
       }
     },
     {
@@ -166,8 +148,7 @@
       "pk": 19,
       "fields": {
         "pelicula_id": 7,
-        "sala_id": 9,
-        "ventana_id": 19
+        "sala_id": 9
       }
     },
     {
@@ -175,8 +156,7 @@
       "pk": 20,
       "fields": {
         "pelicula_id": 7,
-        "sala_id": 10,
-        "ventana_id": 20
+        "sala_id": 10
       }
     },
     {
@@ -184,8 +164,7 @@
       "pk": 21,
       "fields": {
         "pelicula_id": 7,
-        "sala_id": 1,
-        "ventana_id": 21
+        "sala_id": 1
       }
     },
     {
@@ -193,8 +172,7 @@
       "pk": 22,
       "fields": {
         "pelicula_id": 8,
-        "sala_id": 2,
-        "ventana_id": 22
+        "sala_id": 2
       }
     },
     {
@@ -202,8 +180,7 @@
       "pk": 23,
       "fields": {
         "pelicula_id": 8,
-        "sala_id": 3,
-        "ventana_id": 23
+        "sala_id": 3
       }
     },
     {
@@ -211,8 +188,7 @@
       "pk": 24,
       "fields": {
         "pelicula_id": 8,
-        "sala_id": 4,
-        "ventana_id": 24
+        "sala_id": 4
       }
     },
     {
@@ -220,8 +196,7 @@
       "pk": 25,
       "fields": {
         "pelicula_id": 9,
-        "sala_id": 5,
-        "ventana_id": 25
+        "sala_id": 5
       }
     },
     {
@@ -229,8 +204,7 @@
       "pk": 26,
       "fields": {
         "pelicula_id": 9,
-        "sala_id": 6,
-        "ventana_id": 26
+        "sala_id": 6
       }
     },
     {
@@ -238,8 +212,7 @@
       "pk": 27,
       "fields": {
         "pelicula_id": 9,
-        "sala_id": 7,
-        "ventana_id": 27
+        "sala_id": 7
       }
     },
     {
@@ -247,8 +220,7 @@
       "pk": 28,
       "fields": {
         "pelicula_id": 10,
-        "sala_id": 8,
-        "ventana_id": 28
+        "sala_id": 8
       }
     },
     {
@@ -256,8 +228,7 @@
       "pk": 29,
       "fields": {
         "pelicula_id": 10,
-        "sala_id": 9,
-        "ventana_id": 29
+        "sala_id": 9
       }
     },
     {
@@ -265,8 +236,7 @@
       "pk": 30,
       "fields": {
         "pelicula_id": 10,
-        "sala_id": 10,
-        "ventana_id": 30
+        "sala_id": 10
       }
     }
   ]
