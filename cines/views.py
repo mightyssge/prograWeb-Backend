@@ -99,7 +99,7 @@ def verSalasEndpoint(request):
         if nombreFilter == "":
             listaSalaFiltrada = Sala.objects.all()
         else:
-            listaSalaFiltrada = Sala.objects.filter(nombre__icontaincs = nombreFilter)
+            listaSalaFiltrada = Sala.objects.filter(nombre__icontains = nombreFilter)
         
         dataResponse = []
         for sala in listaSalaFiltrada:
