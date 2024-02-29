@@ -94,12 +94,12 @@ def verPeliculasEndpoint(request):
 @csrf_exempt
 def verSalasEndpoint(request):
     if request.method == "GET":
-        nombreFilter = request.GET.get("nombre")
+        pathFilter = request.GET.get("path")
         
-        if nombreFilter == "":
+        if pathFilter == "":
             listaSalaFiltrada = Sala.objects.all()
         else:
-            listaSalaFiltrada = Sala.objects.filter(nombre__icontains = nombreFilter)
+            listaSalaFiltrada = Sala.objects.filter(path__icontains = pathFilter)
         
         dataResponse = []
         for sala in listaSalaFiltrada:
