@@ -6,8 +6,6 @@ from django.shortcuts import get_object_or_404
 from .models import *
 from django.db import IntegrityError
 
-# Create your views here.
-
 @csrf_exempt
 def usuariosEndpoint(request):
     if request.method == 'POST':
@@ -54,7 +52,63 @@ def createUsersEndpoint(request):
             "correo": new_user.correo
         }
         return HttpResponse(json.dumps(dataResponse), status=200)
+    
+@csrf_exempt 
+def verVentanaID(request):
+    if request.method == "GET":
+        fecha = request.GET.get("nombre")
+        hora = request.GET.get("apellido")
 
+        if not fecha or not hora:
+            errorDict = {
+                "msg": "mala hora"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            ventana = Ventana.objects.get(fecha=fecha, hora=hora)
+        except Usuario.DoesNotExist:
+            errorDict = {
+                "msg": "no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        respDict = {
+            "id": ventana.id
+        }
+        return JsonResponse(respDict)
+
+@csrf_exempt
+def createReservasEndpoint(request):
+    if request.method == 'POST':
+        data = request.body
+        user_data = json.loads(data)
+        
+        try:
+            ventana = Ventana.objects.get(pk=user_data['ventana'])
+            usuario = Usuario.objects.get(pk=user_data['usuario'])
+            cantidad = user_data['cantidad']
+            
+            new_reserva = Reserva(ventana=ventana, usuario=usuario, cantidad=cantidad)
+            new_reserva.save()
+            
+            dataResponse = {
+                "ventana": new_reserva.ventana.id,
+                "usuario": new_reserva.usuario.id,
+                "cantidad": new_reserva.cantidad
+            }
+            return HttpResponse(json.dumps(dataResponse), status=200)
+        except ObjectDoesNotExist:
+            errorMsg = {
+                "msg": "Ventana o Usuario no encontrado"
+            }
+            return HttpResponse(json.dumps(errorMsg), status=404)
+        except IntegrityError:
+            errorMsg = {
+                "msg": "Error de integridad al guardar la reserva"
+            }
+            return HttpResponse(json.dumps(errorMsg), status=400)
+        
 @csrf_exempt
 def verPeliculasEndpoint(request):
     if request.method == "GET":
@@ -130,7 +184,30 @@ def verPeliculaEndpoint(request):
             "actores": lista_actores,
         }
         return JsonResponse(respDict)
+@csrf_exempt 
+def verUsuarioID(request):
+    if request.method == "GET":
+        nombre = request.GET.get("nombre")
+        apellido = request.GET.get("apellido")
 
+        if not nombre or not apellido:
+            errorDict = {
+                "msg": "Debe proporcionar un nombre y un apellido"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            usuario = Usuario.objects.get(nombre=nombre, apellido=apellido)
+        except Usuario.DoesNotExist:
+            errorDict = {
+                "msg": "El usuario con el nombre y apellido proporcionados no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        respDict = {
+            "id": usuario.id
+        }
+        return JsonResponse(respDict)
 @csrf_exempt
 def verSalasEndpoint(request):
     if request.method == "GET":
@@ -218,7 +295,7 @@ def verFuncionesxSalaEndpoint (request):
                 "peliculasiglas" : funcion.pelicula_id.siglas,
                 "peliculanombre" : funcion.pelicula_id.title,
                 "peliculaextract" : funcion.pelicula_id.extract,
-                "ventanas " : ventanas
+                "ventanas" : ventanas
             })
 
         return HttpResponse(json.dumps(dataResponse))

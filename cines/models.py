@@ -73,7 +73,7 @@ class Funcion(models.Model):
         return str(self.pk)
 
 class Reserva(models.Model):
-    funcion = models.ForeignKey(Funcion, on_delete=models.SET_NULL, null=True)
+    ventana = models.ForeignKey (Ventana, on_delete=models.SET_NULL, null=True) #falta actualizar cambios
     usuario = models.ForeignKey(Usuario, on_delete=models.SET_NULL, null=True)
     cantidad = models.IntegerField()
     def __str__(self):
