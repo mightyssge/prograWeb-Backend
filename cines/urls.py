@@ -8,6 +8,7 @@ urlpatterns = [
     path('createuser', createUsersEndpoint),
     path('createreserva', createReservasEndpoint),
     path('ver-peliculas',verPeliculasEndpoint),
+    path('ver-peliculaimg',verPeliculasIMGEndpoint),
     path('ver-pelicula',verPeliculaEndpoint),
     path('ver-funciones-pelicula',verFuncionesxPeliculaEndpoint),
     path('ver-funciones-sala',verFuncionesxSalaEndpoint),

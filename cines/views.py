@@ -26,7 +26,13 @@ def usuariosEndpoint(request):
             "correo": usuario_login.correo
         }
         return HttpResponse(json.dumps(dataResponse), status=200)
-
+@csrf_exempt
+def registerPost(request):
+    if request.method == 'POST':
+        data = request.body
+        user_data = json.loads(data)
+        print(data)
+        
 @csrf_exempt
 def createUsersEndpoint(request):
     if request.method == 'POST':
@@ -109,6 +115,37 @@ def createReservasEndpoint(request):
             }
             return HttpResponse(json.dumps(errorMsg), status=400)
         
+@csrf_exempt
+def verPeliculasIMGEndpoint(request):
+    if request.method == "GET":
+        # Es una peticion de tipo GET
+        titleFilter = request.GET.get("title") # Obtenemos query parameter nombre
+
+        if titleFilter == "" :
+            # No hay que filtrar nada
+            listaPeliculaFiltrada = Pelicula.objects.all()
+        else:
+            # Si ha enviado filtro
+            listaPeliculaFiltrada = Pelicula.objects.filter(title__icontains=titleFilter)
+
+        dataResponse = []
+        for pelicula in listaPeliculaFiltrada:
+
+            #dos relaciones one to many para genero y actor
+            listaActoresQuerySet = ActorPelicula.objects.filter(pelicula_id = pelicula.pk)
+            listaActores = [actor.name for actor in listaActoresQuerySet]
+
+            listaGenerosQuerySet = GeneroPelicula.objects.filter(pelicula_id = pelicula.pk)
+            listaGeneros = [genero.genre_name for genero in listaGenerosQuerySet]
+
+            dataResponse.append({
+            
+                "thumbnail" : pelicula.thumbnail,
+            
+            })
+
+        return HttpResponse(json.dumps(dataResponse))
+
 @csrf_exempt
 def verPeliculasEndpoint(request):
     if request.method == "GET":
@@ -258,7 +295,7 @@ def verFuncionesxPeliculaEndpoint (request):
 
             dataResponse.append({
                 "id" : funcion.pk,  
-                "sala" : funcion.sala_id.pk, #necesito el nombre de la sala , sus siglas , su address 
+                "sala" : funcion.sala_id.pk, 
                 "salasiglas" : funcion.sala_id.siglas,
                 "salanombre" : funcion.sala_id.nombre,
                 "salaadress" : funcion.sala_id.direccion,
@@ -301,4 +338,4 @@ def verFuncionesxSalaEndpoint (request):
         return HttpResponse(json.dumps(dataResponse))
     
 
- 
+
