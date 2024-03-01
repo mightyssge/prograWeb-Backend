@@ -172,7 +172,33 @@ def verPeliculasEndpoint(request):
             })
 
         return HttpResponse(json.dumps(dataResponse))
-
+@csrf_exempt
+def verSalasEndpoint(request):
+    if request.method == "GET":
+        pathFilter = request.GET.get("path")
+        
+        if pathFilter == "":
+            listaSalaFiltrada = Sala.objects.all()
+        else:
+            listaSalaFiltrada = Sala.objects.filter(path__icontains = pathFilter)
+        
+        dataResponse = []
+        for sala in listaSalaFiltrada:
+            listaFormatosQuerySet = FormatoSala.objects.filter(sala_id = sala.pk)
+            listaFormatos = [formato.form_name for  formato in listaFormatosQuerySet]
+            
+            dataResponse.append({
+                "id" :  sala.pk,
+                "nombre" : sala.nombre,
+                "siglas" : sala.siglas,
+                "direccion" : sala.direccion,
+                "imagen" : sala.imagen,
+                "path" : sala.path,
+                "city" : sala.city,
+                "formato" : listaFormatos
+            })
+        return HttpResponse(json.dumps(dataResponse))
+    
 def verPeliculaEndpoint(request):
     if request.method == "GET":
         peliculapath = request.GET.get("path")

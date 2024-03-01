@@ -12,7 +12,8 @@ urlpatterns = [
     path('ver-funciones-pelicula',verFuncionesxPeliculaEndpoint),
     path('ver-funciones-sala',verFuncionesxSalaEndpoint),
     path('ver-usuarioid', verUsuarioID),
-    path('ver-ventanaid', verVentanaID)
+    path('ver-ventanaid', verVentanaID),
+    path('ver-salas', verSalasEndpoint)
     
     
 ]
