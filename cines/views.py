@@ -194,7 +194,7 @@ def verFuncionesxSalaEndpoint (request):
                 "peliculasiglas" : funcion.pelicula_id.siglas,
                 "peliculanombre" : funcion.pelicula_id.title,
                 "peliculaextract" : funcion.pelicula_id.extract,
-                "ventanas " : ventanas
+                "ventanas" : ventanas
             })
 
         return HttpResponse(json.dumps(dataResponse))

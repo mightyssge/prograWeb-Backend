@@ -1,0 +1,1967 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "password": "pbkdf2_sha256$260000$3VDdFCTawGd8kY93G3ztps$jOwrPp7hY8vRNcdHU4Be02aEwXqgKTMK6wU1mHoLqww=",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true
+        }
+    },
+    {
+        "model": "cines.usuario",
+        "pk": 1,
+        "fields": {
+            "nombre": "Cesar",
+            "apellido": "Garcia",
+            "correo": "20211104@aloe.ulima.edu.pe",
+            "password": "123"
+        }
+    },
+    {
+        "model": "cines.usuario",
+        "pk": 2,
+        "fields": {
+            "nombre": "Alvaro",
+            "apellido": "Sanchez",
+            "correo": "20211169@aloe.ulima.edu.pe",
+            "password": "123"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 1,
+        "fields": {
+            "title": "The Grudge",
+            "siglas": "TG",
+            "year": 2020,
+            "href": "The_Grudge_(2020_film)",
+            "extract": "The Grudge is a 2020 American psychological supernatural horror film...",
+            "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/34/The_Grudge_2020_Poster.jpeg",
+            "thumbnail_width": 220.0,
+            "thumbnail_height": 326.0,
+            "path": "the-grudge"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 2,
+        "fields": {
+            "title": "Underwater",
+            "siglas": "UW",
+            "year": 2020,
+            "href": "Underwater_(film)",
+            "extract": "Underwater is a 2020 American science fiction action horror film directed by William Eubank. The film stars Kristen Stewart, Vincent Cassel, Jessica Henwick, John Gallagher Jr., Mamoudou Athie, and T.J. Miller.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4a\/Underwater_poster.jpeg",
+            "thumbnail_width": 250.0,
+            "thumbnail_height": 398.0,
+            "path": "underwater"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 3,
+        "fields": {
+            "title": "Like a Boss",
+            "siglas": "LB",
+            "year": 2020,
+            "href": "Like_a_Boss_(film)",
+            "extract": "Like a Boss is a 2020 American comedy film directed by Miguel Arteta, written by Sam Pitman and Adam Cole-Kelly, and starring Tiffany Haddish, Rose Byrne, and Salma Hayek. The plot follows two friends who attempt to take back control of their cosmetics company from an industry titan.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/9\/9a\/LikeaBossPoster.jpg",
+            "thumbnail_width": 259.0,
+            "thumbnail_height": 383.0,
+            "path": "like-a-boss"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 4,
+        "fields": {
+            "title": "Three Christs",
+            "siglas": "TC",
+            "year": 2020,
+            "href": "Three_Christs",
+            "extract": "Three Christs, also known as State of Mind, is a 2017 American drama film directed, co-produced, and co-written by Jon Avnet and based on Milton Rokeach's nonfiction book The Three Christs of Ypsilanti. It screened in the Gala Presentations section at the 2017 Toronto International Film Festival. The film is also known as: Three Christs of Ypsilanti, The Three Christs of Ypsilanti, Three Christs of Santa Monica, and The Three Christs of Santa Monica.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/a\/a1\/Three_Christs_poster.jpg",
+            "thumbnail_width": 259.0,
+            "thumbnail_height": 383.0,
+            "path": "three-christs"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 5,
+        "fields": {
+            "title": "Inherit the Viper",
+            "siglas": "IV",
+            "year": 2020,
+            "href": "Inherit_the_Viper",
+            "extract": "Inherit the Viper is a 2019 American crime drama film directed by Anthony Jerjen, in his feature directorial debut, from a screenplay by Andrew Crabtree. It stars Josh Hartnett, Margarita Levieva, Chandler Riggs, Bruce Dern, Valorie Curry, Owen Teague, and Dash Mihok.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/1c\/Inherit_the_Viper_%282019%29_Film_Poster.jpg",
+            "thumbnail_width": 236.0,
+            "thumbnail_height": 350.0,
+            "path": "inherit-the-viper"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 6,
+        "fields": {
+            "title": "The Sonata",
+            "siglas": "TS",
+            "year": 2020,
+            "href": "The_Sonata_(film)",
+            "extract": "The Sonata is a 2018 mystery thriller film, directed by Andrew Desmond, from a screenplay by Desmond and Arthur Morin. It stars Freya Tingley, Simon Abkarian, James Faulkner, Rutger Hauer, Matt Barber and James Kermack. It was released in the United States on January 10, 2020, by Screen Media Films. It grossed $146,595 at the box office and received mixed reviews from critics.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/13\/The_Sonata_%282018%29_Film_Poster.jpg",
+            "thumbnail_width": 246.0,
+            "thumbnail_height": 350.0,
+            "path": "the-sonata"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 7,
+        "fields": {
+            "title": "The Murder of Nicole Brown Simpson",
+            "siglas": "TN",
+            "year": 2020,
+            "href": "The_Murder_of_Nicole_Brown_Simpson",
+            "extract": "The Murder of Nicole Brown Simpson is a 2019 American crime horror film directed by Daniel Farrands. The film is loosely based on the murder of Nicole Brown Simpson, presenting a version of events in which Brown Simpson is murdered by serial killer Glen Edward Rogers, and not by O. J. Simpson, her ex-husband and the primary suspect in the case. Though Mena Suvari's performance as Nicole Brown was praised, the film was panned by critics.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/e\/ed\/The_Murder_of_Nicole_Brown_Simpson_poster.jpg",
+            "thumbnail_width": 263.0,
+            "thumbnail_height": 380.0,
+            "path": "the-murder-of-nicole-brown-simpson"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 8,
+        "fields": {
+            "title": "Bad Boys for Life",
+            "siglas": "BB",
+            "year": 2020,
+            "href": "Bad_Boys_for_Life",
+            "extract": "Bad Boys for Life is a 2020 American buddy cop action comedy film directed by Adil & Bilall. It is the sequel to Bad Boys II (2003) and the third installment in the Bad Boys franchise. Will Smith, Martin Lawrence, Joe Pantoliano and Theresa Randle reprise their roles in the film and are joined by Paola N\u00fa\u00f1ez, Vanessa Hudgens, Jacob Scipio, Alexander Ludwig, Charles Melton, Kate del Castillo and Nicky Jam. The film was produced by Smith, Jerry Bruckheimer, and Doug Belgrad, with a screenplay written by Chris Bremner, Peter Craig and Joe Carnahan. In Bad Boys for Life, Miami detectives Mike Lowrey and Marcus Burnett investigate a string of murders tied to Lowrey's troubled past.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/9\/90\/Bad_Boys_for_Life_poster.jpg",
+            "thumbnail_width": 219.0,
+            "thumbnail_height": 325.0,
+            "path": "bad-boys-for-life"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 9,
+        "fields": {
+            "title": "Dolittle",
+            "siglas": "DO",
+            "year": 2020,
+            "href": "Dolittle_(film)",
+            "extract": "Dolittle is a 2020 American fantasy adventure film directed by Stephen Gaghan from a screenplay by Gaghan, Dan Gregor, and Doug Mand, based on a story by Thomas Shepherd. Dolittle is based on the title character created by Hugh Lofting and is primarily inspired by the author's second Doctor Dolittle book, The Voyages of Doctor Dolittle (1922). Robert Downey Jr. stars as the title character, alongside Antonio Banderas and Michael Sheen in live-action roles, with Emma Thompson, Rami Malek, John Cena, Kumail Nanjiani, Octavia Spencer, Tom Holland, Craig Robinson, Ralph Fiennes, Selena Gomez, and Marion Cotillard voicing an array of creatures.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/1f\/Dolittle_%282020_film_poster%29.png",
+            "thumbnail_width": 220.0,
+            "thumbnail_height": 326.0,
+            "path": "dolittle"
+        }
+    },
+    {
+        "model": "cines.Pelicula",
+        "pk": 10,
+        "fields": {
+            "title": "A Fall from Grace",
+            "siglas": "AF",
+            "year": 2020,
+            "href": "A_Fall_from_Grace",
+            "extract": "A Fall from Grace is a 2020 American thriller film produced, written, and directed by Tyler Perry and his first to be released by Netflix. The film follows a woman who finds a dangerous new love and the novice attorney who defends her in a sensational court case. This was the final film of actor Cicely Tyson before her death in January 2021.",
+            "thumbnail": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4e\/AFallFromGrace.png",
+            "thumbnail_width": 259.0,
+            "thumbnail_height": 383.0,
+            "path": "a-fall-from-grace"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 1,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Andrea Riseborough"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 2,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Demi\u00e1n Bichir"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 3,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "John Cho"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 4,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Betty Gilpin"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 5,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Lin Shaye"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 6,
+        "fields": {
+            "pelicula_id": 1,
+            "name": "Jacki Weaver"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 7,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Kristen Stewart"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 8,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Vincent Cassel"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 9,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Jessica Henwick"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 10,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "John Gallagher Jr."
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 11,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "Mamoudou Athie"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 12,
+        "fields": {
+            "pelicula_id": 2,
+            "name": "T.J. Miller"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 13,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Tiffany Haddish"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 14,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Rose Byrne"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 15,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Salma Hayek"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 16,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Jennifer Coolidge"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 17,
+        "fields": {
+            "pelicula_id": 3,
+            "name": "Billy Porter"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 18,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Richard Gere"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 19,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Peter Dinklage"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 20,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Walton Goggins"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 21,
+        "fields": {
+            "pelicula_id": 4,
+            "name": "Bradley Whitford"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 22,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Josh Hartnett"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 23,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Margarita Levieva"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 24,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Chandler Riggs"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 25,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Bruce Dern"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 26,
+        "fields": {
+            "pelicula_id": 5,
+            "name": "Owen Teague"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 27,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Freya Tingley"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 28,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Simon Abkarian"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 29,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "Rutger Hauer"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 30,
+        "fields": {
+            "pelicula_id": 6,
+            "name": "James Faulkner"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 31,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Mena Suvari"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 32,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Nick Stahl"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 33,
+        "fields": {
+            "pelicula_id": 7,
+            "name": "Taryn Manning"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 34,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Will Smith"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 35,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Martin Lawrence"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 36,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Vanessa Hudgens"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 37,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Alexander Ludwig"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 38,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Charles Melton"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 39,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Paola N\u00fa\u00f1ez"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 40,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Kate del Castillo"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 41,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Nicky Jam"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 42,
+        "fields": {
+            "pelicula_id": 8,
+            "name": "Joe Pantoliano"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 43,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Robert Downey Jr."
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 44,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Antonio Banderas"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 45,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Michael Sheen"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 46,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Emma Thompson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 47,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Rami Malek"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 48,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "John Cena"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 49,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Kumail Nanjiani"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 50,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Octavia Spencer"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 51,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Tom Holland"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 52,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Craig Robinson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 53,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Ralph Fiennes"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 54,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Selena Gomez"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 55,
+        "fields": {
+            "pelicula_id": 9,
+            "name": "Marion Cotillard"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 56,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Crystal R. Fox"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 57,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Phylicia Rashad"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 58,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Bresha Webb"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 59,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Mehcad Brooks"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 60,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Cicely Tyson"
+        }
+    },
+    {
+        "model": "cines.ActorPelicula",
+        "pk": 61,
+        "fields": {
+            "pelicula_id": 10,
+            "name": "Tyler Perry"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 1,
+        "fields": {
+            "pelicula_id": 1,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 2,
+        "fields": {
+            "pelicula_id": 1,
+            "genre_name": "Supernatural"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 3,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Action"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 4,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 5,
+        "fields": {
+            "pelicula_id": 2,
+            "genre_name": "Science Fiction"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 6,
+        "fields": {
+            "pelicula_id": 3,
+            "genre_name": "Comedy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 7,
+        "fields": {
+            "pelicula_id": 4,
+            "genre_name": "Drama"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 8,
+        "fields": {
+            "pelicula_id": 5,
+            "genre_name": "Crime"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 9,
+        "fields": {
+            "pelicula_id": 5,
+            "genre_name": "Drama"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 10,
+        "fields": {
+            "pelicula_id": 6,
+            "genre_name": "Mystery"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 11,
+        "fields": {
+            "pelicula_id": 6,
+            "genre_name": "Thriller"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 12,
+        "fields": {
+            "pelicula_id": 7,
+            "genre_name": "Crime"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 13,
+        "fields": {
+            "pelicula_id": 7,
+            "genre_name": "Horror"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 14,
+        "fields": {
+            "pelicula_id": 8,
+            "genre_name": "Action"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 15,
+        "fields": {
+            "pelicula_id": 8,
+            "genre_name": "Comedy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 16,
+        "fields": {
+            "pelicula_id": 9,
+            "genre_name": "Adventure"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 17,
+        "fields": {
+            "pelicula_id": 9,
+            "genre_name": "Fantasy"
+        }
+    },
+    {
+        "model": "cines.GeneroPelicula",
+        "pk": 18,
+        "fields": {
+            "pelicula_id": 10,
+            "genre_name": "Thriller"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 1,
+        "fields": {
+            "siglas": "AL",
+            "nombre": "CP Alcazar",
+            "direccion": "Av. Santa Cruz 814-816",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b70aa8b9-f9f9-49c5-8f7e-28e6afd5646f",
+            "path": "cp-alcazar",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 2,
+        "fields": {
+            "siglas": "AQ",
+            "nombre": "CP Arequipa",
+            "direccion": "Av. Ejercito 793 Cayma",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/f0c0deba-02e8-4e07-9d70-ab29336bc551",
+            "path": "cp-arequipa",
+            "city": "Arequipa"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 3,
+        "fields": {
+            "siglas": "PC",
+            "nombre": "CP Arequipa Paseo Central",
+            "direccion": "Av. Arturo Ibañez S/N",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b06aa9ea-73e2-4f7b-9608-f99536d6cf3b",
+            "path": "cp-arequipa-paseo-central",
+            "city": "Arequipa"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 4,
+        "fields": {
+            "siglas": "AR",
+            "nombre": "CP Arequipa Real Plaza",
+            "direccion": "Av. Ejercito 1009 Cayma",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/d777a757-28b0-4ba2-870b-f807c3e72950",
+            "path": "cp-arequipa-real-plaza",
+            "city": "Arequipa"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 5,
+        "fields": {
+            "siglas": "LB",
+            "nombre": "CP Brasil",
+            "direccion": "Av. Brasil 714 - 792 Piso 3",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/bc5cbd20-d5f2-4e79-931f-d31911c26968",
+            "path": "cp-brasil",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 6,
+        "fields": {
+            "siglas": "CJ",
+            "nombre": "CP Cajamarca",
+            "direccion": "Av. Vía de Evitamiento Norte",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/35bd2686-f0f3-42aa-881c-627cb5f59e43",
+            "path": "cp-cajamarca",
+            "city": "Cajamarca"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 7,
+        "fields": {
+            "siglas": "CI",
+            "nombre": "CP Caminos del Inca",
+            "direccion": "Av Caminos del Inca 241 Int401",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/3c788c2c-2fdf-452c-867a-69da795373cd",
+            "path": "cp-caminos-del-inca",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 8,
+        "fields": {
+            "siglas": "CG",
+            "nombre": "CP Canto Grande",
+            "direccion": "AV CANTO GRANDE MZ.A LT.15",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/778b2dad-e44a-41af-8f11-694bf4b4f40b",
+            "path": "cp-canto-grande",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 9,
+        "fields": {
+            "siglas": "CT",
+            "nombre": "CP Centro",
+            "direccion": "Jr. De la Unión 819",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/a98e74ee-4e80-40f7-9c5f-4bdde69f948d",
+            "path": "cp-centro",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 10,
+        "fields": {
+            "siglas": "CC",
+            "nombre": "CP Centro Civico",
+            "direccion": "Av. Inca Garcilazo de la Vega",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/ef527115-a564-4d62-acc9-e7579913705c",
+            "path": "cp-centro-civico",
+            "city": "Lima"
+        }
+    },
+    {
+        "model": "cines.Sala",
+        "pk": 11,
+        "fields": {
+            "siglas": "CX",
+            "nombre": "CP Chiclayo",
+            "direccion": "Av. Miguel de Cervantes 300",
+            "imagen": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/c6fa7835-f590-4290-8b1e-68338f63841c",
+            "path": "cp-chiclayo",
+            "city": "Chiclayo"
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 1,
+        "fields": {
+            "pelicula_id": 1,
+            "sala_id": 1
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 2,
+        "fields": {
+            "pelicula_id": 1,
+            "sala_id": 2
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 3,
+        "fields": {
+            "pelicula_id": 1,
+            "sala_id": 3
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 4,
+        "fields": {
+            "pelicula_id": 2,
+            "sala_id": 4
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 5,
+        "fields": {
+            "pelicula_id": 2,
+            "sala_id": 5
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 6,
+        "fields": {
+            "pelicula_id": 2,
+            "sala_id": 6
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 7,
+        "fields": {
+            "pelicula_id": 3,
+            "sala_id": 7
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 8,
+        "fields": {
+            "pelicula_id": 3,
+            "sala_id": 8
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 9,
+        "fields": {
+            "pelicula_id": 3,
+            "sala_id": 9
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 10,
+        "fields": {
+            "pelicula_id": 4,
+            "sala_id": 10
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 11,
+        "fields": {
+            "pelicula_id": 4,
+            "sala_id": 1
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 12,
+        "fields": {
+            "pelicula_id": 4,
+            "sala_id": 2
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 13,
+        "fields": {
+            "pelicula_id": 5,
+            "sala_id": 3
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 14,
+        "fields": {
+            "pelicula_id": 5,
+            "sala_id": 4
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 15,
+        "fields": {
+            "pelicula_id": 5,
+            "sala_id": 5
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 16,
+        "fields": {
+            "pelicula_id": 6,
+            "sala_id": 6
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 17,
+        "fields": {
+            "pelicula_id": 6,
+            "sala_id": 7
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 18,
+        "fields": {
+            "pelicula_id": 6,
+            "sala_id": 8
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 19,
+        "fields": {
+            "pelicula_id": 7,
+            "sala_id": 9
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 20,
+        "fields": {
+            "pelicula_id": 7,
+            "sala_id": 10
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 21,
+        "fields": {
+            "pelicula_id": 7,
+            "sala_id": 1
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 22,
+        "fields": {
+            "pelicula_id": 8,
+            "sala_id": 2
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 23,
+        "fields": {
+            "pelicula_id": 8,
+            "sala_id": 3
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 24,
+        "fields": {
+            "pelicula_id": 8,
+            "sala_id": 4
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 25,
+        "fields": {
+            "pelicula_id": 9,
+            "sala_id": 5
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 26,
+        "fields": {
+            "pelicula_id": 9,
+            "sala_id": 6
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 27,
+        "fields": {
+            "pelicula_id": 9,
+            "sala_id": 7
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 28,
+        "fields": {
+            "pelicula_id": 10,
+            "sala_id": 8
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 29,
+        "fields": {
+            "pelicula_id": 10,
+            "sala_id": 9
+        }
+    },
+    {
+        "model": "cines.Funcion",
+        "pk": 30,
+        "fields": {
+            "pelicula_id": 10,
+            "sala_id": 10
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 1,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "17:00:00",
+            "funcion_id": 1
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 2,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "18:00:00",
+            "funcion_id": 2
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 3,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "16:00:00",
+            "funcion_id": 3
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 4,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "17:00:00",
+            "funcion_id": 4
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 5,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "18:00:00",
+            "funcion_id": 5
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 6,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "20:00:00",
+            "funcion_id": 6
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 7,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "18:00:00",
+            "funcion_id": 7
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 8,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "19:00:00",
+            "funcion_id": 8
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 9,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "20:00:00",
+            "funcion_id": 9
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 10,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "21:00:00",
+            "funcion_id": 10
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 11,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "23:00:00",
+            "funcion_id": 11
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 12,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "15:00:00",
+            "funcion_id": 12
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 13,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "16:00:00",
+            "funcion_id": 13
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 14,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "17:00:00",
+            "funcion_id": 14
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 15,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "18:00:00",
+            "funcion_id": 15
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 16,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "19:00:00",
+            "funcion_id": 16
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 17,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "20:00:00",
+            "funcion_id": 17
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 18,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "21:00:00",
+            "funcion_id": 18
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 19,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "23:00:00",
+            "funcion_id": 19
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 20,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "16:00:00",
+            "funcion_id": 20
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 21,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "18:00:00",
+            "funcion_id": 21
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 22,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "21:00:00",
+            "funcion_id": 22
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 23,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "23:00:00",
+            "funcion_id": 23
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 24,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "18:00:00",
+            "funcion_id": 24
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 25,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "19:00:00",
+            "funcion_id": 25
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 26,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "21:00:00",
+            "funcion_id": 26
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 27,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "23:00:00",
+            "funcion_id": 27
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 28,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "16:00:00",
+            "funcion_id": 28
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 29,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "17:00:00",
+            "funcion_id": 29
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 30,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "18:00:00",
+            "funcion_id": 30
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 31,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "18:00:00",
+            "funcion_id": 1
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 32,
+        "fields": {
+            "fecha": "2024-03-01",
+            "hora": "19:00:00",
+            "funcion_id": 2
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 33,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "17:00:00",
+            "funcion_id": 3
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 34,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "18:00:00",
+            "funcion_id": 4
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 35,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "19:00:00",
+            "funcion_id": 5
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 36,
+        "fields": {
+            "fecha": "2024-03-02",
+            "hora": "21:00:00",
+            "funcion_id": 6
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 37,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "19:00:00",
+            "funcion_id": 7
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 38,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "20:00:00",
+            "funcion_id": 8
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 39,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "21:00:00",
+            "funcion_id": 9
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 40,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "22:00:00",
+            "funcion_id": 10
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 41,
+        "fields": {
+            "fecha": "2024-03-03",
+            "hora": "00:00:00",
+            "funcion_id": 11
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 42,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "16:00:00",
+            "funcion_id": 12
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 43,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "17:00:00",
+            "funcion_id": 13
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 44,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "18:00:00",
+            "funcion_id": 14
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 45,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "19:00:00",
+            "funcion_id": 15
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 46,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "20:00:00",
+            "funcion_id": 16
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 47,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "21:00:00",
+            "funcion_id": 17
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 48,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "22:00:00",
+            "funcion_id": 18
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 49,
+        "fields": {
+            "fecha": "2024-03-04",
+            "hora": "00:00:00",
+            "funcion_id": 19
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 50,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "17:00:00",
+            "funcion_id": 20
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 51,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "19:00:00",
+            "funcion_id": 21
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 52,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "22:00:00",
+            "funcion_id": 22
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 53,
+        "fields": {
+            "fecha": "2024-03-05",
+            "hora": "00:00:00",
+            "funcion_id": 23
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 54,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "19:00:00",
+            "funcion_id": 24
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 55,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "20:00:00",
+            "funcion_id": 25
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 56,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "22:00:00",
+            "funcion_id": 26
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 57,
+        "fields": {
+            "fecha": "2024-03-06",
+            "hora": "00:00:00",
+            "funcion_id": 27
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 58,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "17:00:00",
+            "funcion_id": 28
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 59,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "18:00:00",
+            "funcion_id": 29
+        }
+    },
+    {
+        "model": "cines.Ventana",
+        "pk": 60,
+        "fields": {
+            "fecha": "2024-03-07",
+            "hora": "19:00:00",
+            "funcion_id": 30
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 1,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 2,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 3,
+        "fields": {
+            "sala_id": 1,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 4,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 5,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 6,
+        "fields": {
+            "sala_id": 2,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 7,
+        "fields": {
+            "sala_id": 3,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 8,
+        "fields": {
+            "sala_id": 3,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 9,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 10,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 11,
+        "fields": {
+            "sala_id": 4,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 12,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 13,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 14,
+        "fields": {
+            "sala_id": 5,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 15,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 16,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 17,
+        "fields": {
+            "sala_id": 6,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 18,
+        "fields": {
+            "sala_id": 7,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 19,
+        "fields": {
+            "sala_id": 7,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 20,
+        "fields": {
+            "sala_id": 8,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 21,
+        "fields": {
+            "sala_id": 8,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 22,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 23,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 24,
+        "fields": {
+            "sala_id": 9,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 25,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 26,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 27,
+        "fields": {
+            "sala_id": 10,
+            "form_name": "3D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 28,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "2D"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 29,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "REGULAR"
+        }
+    },
+    {
+        "model": "cines.FormatoSala",
+        "pk": 30,
+        "fields": {
+            "sala_id": 11,
+            "form_name": "3D"
+        }
+    }
+]

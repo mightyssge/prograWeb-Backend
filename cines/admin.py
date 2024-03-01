@@ -26,7 +26,7 @@ class FuncionAdmin(admin.ModelAdmin):
     list_display = ['pelicula_id', 'sala_id']
 
 class ReservaAdmin(admin.ModelAdmin):
-    list_display = ['funcion', 'usuario']
+    list_display = ['ventana', 'usuario']
 
 admin.site.register(Usuario, UsuarioAdmin)
 admin.site.register(Pelicula, PeliculaAdmin)
