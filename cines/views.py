@@ -54,6 +54,37 @@ def createUsersEndpoint(request):
             "correo": new_user.correo
         }
         return HttpResponse(json.dumps(dataResponse), status=200)
+    
+@csrf_exempt
+def createReservasEndpoint(request):
+    if request.method == 'POST':
+        data = request.body
+        user_data = json.loads(data)
+        
+        try:
+            ventana = Ventana.objects.get(pk=user_data['ventana'])
+            usuario = Usuario.objects.get(pk=user_data['usuario'])
+            cantidad = user_data['cantidad']
+            
+            new_reserva = Reserva(ventana=ventana, usuario=usuario, cantidad=cantidad)
+            new_reserva.save()
+            
+            dataResponse = {
+                "ventana": new_reserva.ventana.id,
+                "usuario": new_reserva.usuario.id,
+                "cantidad": new_reserva.cantidad
+            }
+            return HttpResponse(json.dumps(dataResponse), status=200)
+        except ObjectDoesNotExist:
+            errorMsg = {
+                "msg": "Ventana o Usuario no encontrado"
+            }
+            return HttpResponse(json.dumps(errorMsg), status=404)
+        except IntegrityError:
+            errorMsg = {
+                "msg": "Error de integridad al guardar la reserva"
+            }
+            return HttpResponse(json.dumps(errorMsg), status=400)
 
 @csrf_exempt
 def verPeliculasEndpoint(request):
@@ -130,9 +161,6 @@ def verPeliculaEndpoint(request):
             "actores": lista_actores,
         }
         return JsonResponse(respDict)
-
-def verSalaEndpoint (request):
-    pass
 
 def verFuncionesxPeliculaEndpoint (request):
     if request.method == "GET":
