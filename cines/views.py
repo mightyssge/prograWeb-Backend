@@ -55,6 +55,57 @@ def createUsersEndpoint(request):
         }
         return HttpResponse(json.dumps(dataResponse), status=200)
     
+
+@csrf_exempt 
+def verUsuarioID(request):
+    if request.method == "GET":
+        nombre = request.GET.get("nombre")
+        apellido = request.GET.get("apellido")
+
+        if not nombre or not apellido:
+            errorDict = {
+                "msg": "Debe proporcionar un nombre y un apellido"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            usuario = Usuario.objects.get(nombre=nombre, apellido=apellido)
+        except Usuario.DoesNotExist:
+            errorDict = {
+                "msg": "El usuario con el nombre y apellido proporcionados no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        respDict = {
+            "id": usuario.id
+        }
+        return JsonResponse(respDict)
+    
+@csrf_exempt 
+def verVentanaID(request):
+    if request.method == "GET":
+        fecha = request.GET.get("nombre")
+        hora = request.GET.get("apellido")
+
+        if not fecha or not hora:
+            errorDict = {
+                "msg": "mala hora"
+            }
+            return JsonResponse(errorDict, status=400)
+
+        try:
+            ventana = Ventana.objects.get(fecha=fecha, hora=hora)
+        except Usuario.DoesNotExist:
+            errorDict = {
+                "msg": "no existe"
+            }
+            return JsonResponse(errorDict, status=404)
+
+        respDict = {
+            "id": ventana.id
+        }
+        return JsonResponse(respDict)
+    
 @csrf_exempt
 def createReservasEndpoint(request):
     if request.method == 'POST':
